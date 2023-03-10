@@ -19,16 +19,16 @@ func main() {
 
 func shell() (accepting string) {
 	arg := os.Args[1:]
-	if len(arg) < 2 {
-		fmt.Println("Bad usage format, try using flag -h for information how to use brutter")
-		os.Exit(127)
-	}
 	if (arg[0] == "--help") || (arg[0] == "-h") {
 		fmt.Print("Options:\n" +
 			"-h, --help - show this help message and exit\n" +
 			"-u, --url -  Target URL, you should input full format http(s)://target.com...\n\n " +
 			"Usage Example:\n" +
 			"./brutter -u <target url>\n\n")
+		os.Exit(127)
+	}
+	if len(arg) < 2 {
+		fmt.Println("Bad usage format, try using flag -h for information how to use brutter")
 		os.Exit(127)
 	}
 	if arg[0] != "-u" {
