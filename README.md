@@ -5,6 +5,7 @@ Simple tool for web path enumeration
 
 Options:
 -h, --help - show this help message and exit
+
 -u, --url -  Target URL, you should input full format http(s)://target.com...
 
  Usage Example:
