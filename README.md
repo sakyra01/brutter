@@ -13,5 +13,5 @@ Options:
  Usage Example:
  
  
-./brutter -u <target url>
+./brutter -u (target url)
 
